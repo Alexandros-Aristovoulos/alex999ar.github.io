@@ -281,7 +281,7 @@ fill: #64FFDA;
 
 .grid-subCategory{    
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(min(420, 95vw), max-content));
   justify-content: center;
   grid-gap: 1.5em;   
 }
@@ -291,8 +291,8 @@ fill: #64FFDA;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 2.5rem;
-  padding-bottom: 2%;
-  max-width: min(400px, 80vw);
+  padding-bottom: 2rem;
+  max-width: min(400px, 90vw);
   position: relative;
   font-size: small;
   min-height: 200px;
@@ -312,6 +312,7 @@ fill: #64FFDA;
     transform: scale(1.08); /* (Note: if the zoom is too large, it will go outside of the viewport) */ 
   }
 }
+
 
 .portfolioTitle{
   margin-top: -2rem;
