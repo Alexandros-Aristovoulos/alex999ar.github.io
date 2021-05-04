@@ -11,9 +11,7 @@ body {
     user-select: none; /* Standard */
 
 }
-#lastElement{
-  margin-bottom: 5em;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -113,7 +111,6 @@ fill: #64FFDA;
   .navbar:hover .link-text {
     display: inline;
   }
-
 }
 
 /* Larger screens */
@@ -161,6 +158,10 @@ body::-webkit-scrollbar-thumb {
 
 #occupation{
   font-size: max(2vw, 25px);
+}
+
+#lastElement{
+  margin-bottom: 5em;
 }
 
 ul {
@@ -220,7 +221,6 @@ fill: #64FFDA;
 }
 
 .profileImage{
-  src: "images/profile.jpg"; 
   border-radius: 50%;
   width: 200px;
   margin: 1rem auto 20px;
@@ -307,9 +307,10 @@ fill: #64FFDA;
 }
 
 
-
-.portfolioProject:hover {
-  transform: scale(1.08); /* (Note: if the zoom is too large, it will go outside of the viewport) */ 
+@media only screen and (min-width: 600px) {
+  .portfolioProject:hover {
+    transform: scale(1.08); /* (Note: if the zoom is too large, it will go outside of the viewport) */ 
+  }
 }
 
 .portfolioTitle{
@@ -336,13 +337,15 @@ fill: #64FFDA;
   margin-right: auto;
 }
 
-.contact:hover{
-    transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
-    color: #64FFDA;
-}
-.contact:hover path { 
-  fill: #64FFDA;
+@media only screen and (min-width: 600px) {
+  .contact:hover{
+      transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
+      color: #64FFDA;
   }
+  .contact:hover path { 
+    fill: #64FFDA;
+    }
+}
 
 .contactDetails{
   margin-left: 10px;
