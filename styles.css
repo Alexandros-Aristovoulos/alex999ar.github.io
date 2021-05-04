@@ -293,7 +293,7 @@ fill: #64FFDA;
   padding-right: 1em;
   padding-top: 2.5rem;
   padding-bottom: 2%;
-  max-width: min(400px, 90vw);
+  max-width: min(400px, 80vw);
   position: relative;
   font-size: small;
   min-height: 200px;
