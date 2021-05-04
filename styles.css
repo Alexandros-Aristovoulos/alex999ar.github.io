@@ -281,7 +281,7 @@ fill: #64FFDA;
 
 .grid-subCategory{    
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(420, 95vw), max-content));
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 95vw), max-content));
   justify-content: center;
   grid-gap: 1.5em;   
 }
